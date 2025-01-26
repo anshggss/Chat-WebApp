@@ -5,16 +5,21 @@ import { RouterProvider } from "react-router-dom";
 import ChatRoom from "./components/ChatRoom/ChatRoom.jsx";
 import { UserProvider } from "./data/UserContext.jsx";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <LoginPage />,
+    },
+    {
+      path: "/chat",
+      element: <ChatRoom />,
+    },
+  ],
   {
-    path: "/",
-    element: <LoginPage />,
-  },
-  {
-    path: "/chat",
-    element: <ChatRoom />,
-  },
-]);
+    basename: "/chatApp/",
+  }
+);
 
 function App() {
   return (
