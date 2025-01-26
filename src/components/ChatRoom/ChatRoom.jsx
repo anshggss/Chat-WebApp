@@ -7,7 +7,7 @@ function ChatRoom() {
   const { username } = useUser();
   const [message, setMessage] = useState(""); // for storing message input
   const [messages, setMessages] = useState([]); // to store all messages
-  const socket = io("https://141.148.212.69:9000"); // Socket.IO connection
+  const socket = io("http://localhost:9000"); // Socket.IO connection
 
   useEffect(() => {
     // Listening for incoming messages
@@ -18,7 +18,6 @@ function ChatRoom() {
     // Send the username when the user joins
     socket.emit("join", username);
 
-    // Clean up the socket connection when component unmounts
     return () => {
       socket.disconnect();
     };

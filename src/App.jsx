@@ -15,10 +15,11 @@ const router = createBrowserRouter(
       path: "/chat",
       element: <ChatRoom />,
     },
-  ],
-  {
-    basename: "/Chat-WebApp/",
-  }
+  ]
+  // ],
+  // {
+  //   basename: "/Chat-WebApp/",
+  // }
 );
 
 function App() {
