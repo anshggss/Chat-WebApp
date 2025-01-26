@@ -17,7 +17,7 @@ const router = createBrowserRouter(
     },
   ],
   {
-    basename: "/chatApp/",
+    basename: "/Chat-WebApp/",
   }
 );
 
