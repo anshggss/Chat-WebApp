@@ -7,7 +7,7 @@ function ChatRoom() {
   const { username } = useUser();
   const [message, setMessage] = useState(""); // for storing message input
   const [messages, setMessages] = useState([]); // to store all messages
-  const socket = io("http://141.148.212.69:9000"); // Socket.IO connection
+  const socket = io("https://141.148.212.69:9000"); // Socket.IO connection
 
   useEffect(() => {
     // Listening for incoming messages
