@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Gothic&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+.website {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: #000;
+}
+
+.leftPanel {
+    width: 30%;
+    margin: 20px;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 1rem;
+    color: azure;
+}
+
+.rightPanel {
+    width: 70%;
+    background-color: #333;
+    margin: 20px;
+    border-radius: 1rem;
+    color: white;
+    padding: 20px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    /* For Firefox */
+    scrollbar-color: #888 #333;
+}
+
+.rightPanel::-webkit-scrollbar {
+    width: 8px;
+}
+
+.rightPanel::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+.rightPanel::-webkit-scrollbar-track {
+    background-color: #333;
+}
+
+.sendMessage {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 0 0 1rem 1rem;
+}
+
+#inp {
+    height: 40px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 80%;
+    background-color: #c8c6c6;
+}
+
+.leftPanel h1,
+p {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#button {
+    width: 20%;
+    outline: none;
+    border: none;
+    background-color: rgb(52, 50, 50);
+    color: white;
+    transition: all .3s;
+}
+
+#inp:focus{
+    border: 2px solid blue;
+}
+
+#button:hover{
+    transform: scale(1.1);
+}
+
+#button:active{
+    opacity: 0.8;
+    transform: scale(1);
+}
