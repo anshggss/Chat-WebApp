@@ -1,6 +1,6 @@
-# Chat Application BackStory
+# Chat Application
 
----
+## BackStory
 
 So, I've been building frontend projects for a while, but none of them felt like they were it. Then, I decided to make a chat application (CAUSE WHY NOT!!!).
 
